@@ -3,6 +3,7 @@ using Android.Content.PM;
 using Android.OS;
 using VisualPerformance.Droid.Services;
 using Xamarin.Forms;
+using Xamarin.Forms.Internals;
 
 namespace VisualPerformance.Droid
 {
@@ -16,6 +17,7 @@ namespace VisualPerformance.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            Profile.Start();
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
@@ -24,6 +26,7 @@ namespace VisualPerformance.Droid
             FormsMaterial.Init(this, savedInstanceState);
             DependencyService.Register<ProfilerService>();
             LoadApplication(new App());
+            
         }
     }
 }

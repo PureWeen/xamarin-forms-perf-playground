@@ -1,10 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <base:ProfilerPage
     xmlns:base="clr-namespace:VisualPerformance.Views.Base"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="VisualPerformance.Views.MainView" 
-    Visual="Material">
+    
+    >
     <ContentPage.Resources>
         <ResourceDictionary>
 
@@ -50,20 +51,25 @@
     <ContentPage.Content>
         <Grid
             BackgroundColor="DarkGray">
-            <Frame 
+            <Frame Visual="Material"
                 Style="{StaticResource SignInFrameStyle}">
                 <StackLayout 
                     Style="{StaticResource SignInPanelStyle}">
                     <Label 
                         Text="Sign in"
                         Style="{StaticResource SignInTitleStyle}" />
-                    <Entry 
-                        Placeholder="Username" />
-                    <Entry 
-                        IsPassword="True"
-                        Placeholder="Password" />
-                    <Button 
+                    <ProgressBar Visual="Material"></ProgressBar>
+                    <ProgressBar Visual="Material"></ProgressBar>
+                    <Slider Visual="Material"></Slider>
+                    <Slider  Visual="Material"></Slider>
+                    <Button  Visual="Material"
+                        AutomationId="materialButton"
                         Text="Sign in" 
+                        Style="{StaticResource SignInButtontyle}"/>
+                    <Button  Visual="Material"
+                        AutomationId="defaultButton"
+                        Text="Click me to see performance" 
+                        Clicked="Handle_Clicked"
                         Style="{StaticResource SignInButtontyle}"/>
                 </StackLayout>
             </Frame>

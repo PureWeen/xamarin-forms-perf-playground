@@ -15,7 +15,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
     <NuGetPackageImportStamp>
@@ -29,9 +28,7 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
     <AotAssemblies>true</AotAssemblies>
-    <EnableLLVM>false</EnableLLVM>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -51,9 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.471358-pre1" />
     <PackageReference Include="Xamarin.Forms.Visual.Material">
-      <Version>4.0.0.425677</Version>
+      <Version>4.1.0.471358-pre1</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
@@ -95,7 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VisualPerformance\VisualPerformance.csproj">
-      <Project>{DA0FF6E6-32B5-4C7A-926A-95B68A8E9393}</Project>
+      <Project>{5AA03230-5C60-4743-9D77-A97146F56090}</Project>
       <Name>VisualPerformance</Name>
     </ProjectReference>
   </ItemGroup>
